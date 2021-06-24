@@ -1,0 +1,14 @@
+doctype html
+html
+    head
+        meta(charset="utf-8")/
+        title Nombres 
+    body 
+        div 
+            ul 
+                each registro, index in registros 
+                    li #{registro.nombre +':' + registro.edad}
+
+                hr
+                p 
+                    a(href="/form") Ingresar nuevo
